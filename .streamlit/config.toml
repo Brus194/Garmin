@@ -1,0 +1,15 @@
+# Streamlit-konfiguration – optimeret til at blive embeddet i Notion via et link.
+# Åbn dashboardet med ?embed=true i URL'en for at skjule Streamlits egen menu/header.
+
+[server]
+headless = true
+port = 8501
+# Nødvendigt for at appen kan vises i en iframe (Notion-embed).
+enableCORS = false
+enableXsrfProtection = false
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
